@@ -1,5 +1,12 @@
 {% extends 'base_course.html' %}
 
+{% block assets %}
+{{ super() }}
+  <link href="assets/css/overrides.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/course.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/unit.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block subtitle %}
   {# I18N: Title of the webpage. #}
   - {{ gettext('Unit') }} {{ unit.index }} - {{ unit.title }}
@@ -75,16 +82,6 @@
                   {% endif %}
                 </h1>
               </div>
-              <div class="gcb-col-3">
-                <p style="float:right; margin-top: 0px;">
-                  {% if lesson.notes %}
-                  <a role="button" class="gcb-button" id="lessonNotesLink" href="{{ lesson.notes }}" target="_blank">
-                    {# I18N: Link to a text version of a lesson video. #}
-                    {{ gettext('Text Version') }}
-                  </a>
-                  {% endif %}
-                </p>
-              </div>
             </div><!-- /gcb-cols -->
 
             {% if objectives %}
@@ -103,13 +100,8 @@
             {% endif %}
 
             {% if lesson.video %}
-              <p class="gcb-video-container">
-                {# I18N: Alt text for an embedded YouTube video player. #}
-                <iframe class="youtube-player" title="{{ gettext('YouTube Video Player') }}"
-                        type="text/html" width="650" height="400" frameborder="0" allowfullscreen
-                        src="https://www.youtube.com/embed/{{ lesson.video }}?feature=player_embedded&rel=0">
-                </iframe>
-              </p>
+              <hr/>
+              <p style="float: left; margin-left: 0px;">{% include lesson.video %}</p>
             {% endif %}
 
           {% else %}

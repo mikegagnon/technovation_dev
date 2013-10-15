@@ -1,0 +1,22 @@
+.paragraph {
+  float: left;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.paragraph ul, .paragraph li {
+  margin: 0px;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.em {
+  font-style: italic;
+}
+
