@@ -1,7 +1,8 @@
 id,type,unit_id,title,release_date,now_available
-1,U,1,Hack Day Tutorial Guide,available July 10,True
-2,U,2,Pre-Survey + Team Registration for Students,available July 10,True
-3,U,3,Course Materials,available July 10,True
-4,U,4,Program Logistics Questions,available July 10,True
-5,U,5,Mentor Meetups,available July 10,True
-6,U,6,Week 1: Introduction (2/3/2014),available July 10,True
+1,U,1,Pre-Survey + Team Registration for Students,available July 10,True
+2,U,2,Hack Day Tutorial Guide,available July 10,True
+3,U,3,Tech Company Field Trip,available July 10,True
+4,U,4,Course Materials,available July 10,True
+5,U,5,Program Logistics Questions,available July 10,True
+6,U,6,Mentor Meetups,available July 10,True
+7,U,7,Week 1: Introduction (2/3/2014),available July 10,True
